@@ -1,0 +1,38 @@
+
+// Return the number (count) of vowels in the given string.
+
+function getCount(str) {
+
+    let count = 0
+    const vowels = "aeiou"
+    const newArray = [...str]
+    newArray.forEach((alphabet)=>{
+        if (vowels.includes(alphabet)){
+            count+=1
+
+}})
+  return count
+}
+
+
+
+// In this kata you will be given a sequence of the dimensions of rectangles ( sequence with width and length ) and circles ( radius - just a number ).Your task is to return a new sequence of dimensions, sorted ascending by area.
+
+function sortByArea(array) {
+    const areaArray = [...array];
+    areaArray.sort((a, b) => {
+      let areaOfA, areaOfB;
+      if (typeof a === "object") {
+        areaOfA = a[0] * a[1];
+      } else {
+        areaOfA = Math.PI * a * a;
+      }
+      if (typeof b === "object") {
+        areaOfB = b[0] * b[1];
+      } else {
+        areaOfB = Math.PI * b * b;
+      }
+      return areaOfA - areaOfB;
+    });
+    return areaArray;
+  }
