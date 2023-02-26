@@ -113,11 +113,22 @@ console.log(podAndTeamAllocation(userData))
 
 
 // Write an ES6 function which checks if a student already has a team. If team is not given then add them to team “A” and return the object else do nothing and return the same object. Avoid using in-built methods
-
+//m1
 const checkForTeam = obj => {
     obj.hasOwnProperty('team') ? obj : obj.team = "A"
     return obj
     
+}
+
+//m2
+const checkForTeam = obj => {
+    for (let key in obj){
+        if (key === "team"){
+            return obj
+        }
+    }
+    obj.team = "A"
+    return obj
 }
 
 console.log(checkForTeam({firstName: 'Penn', lastName: 'Ma'}))
