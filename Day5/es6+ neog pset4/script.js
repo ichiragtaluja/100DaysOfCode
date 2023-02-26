@@ -108,3 +108,80 @@ const podAndTeamAllocation = (obj) => {
 const userData = { firstName : "John", lastName: "Dee" }
 console.log(podAndTeamAllocation(userData))
 // {firstName: 'John', lastName: 'Dee', teamId: 667543}
+
+
+
+
+// Write an ES6 function which checks if a student already has a team. If team is not given then add them to team “A” and return the object else do nothing and return the same object. Avoid using in-built methods
+
+const checkForTeam = obj => {
+    obj.hasOwnProperty('team') ? obj : obj.team = "A"
+    return obj
+    
+}
+
+console.log(checkForTeam({firstName: 'Penn', lastName: 'Ma'}))
+// {firstName: 'Penn', lastName: 'Ma', team: A}
+
+console.log(checkForTeam({firstName: 'John', lastName: 'Dee', team: 'B'}))
+// {firstName: 'John', lastName: 'Dee', team: B}
+
+console.log(checkForTeam({firstName: 'Priya', lastName: 'Raj'}))
+// {firstName: 'Priya', lastName: 'Raj', team: A}
+
+
+
+
+
+// Destructure the following code to get the desired outputs. Avoid using in-built methods.
+
+const book = { 
+    title: 'JavaScript: The Definitive Guide',  
+    authors: [{name: 'David Flanagan', age: 49 }, { name: 'Yukihiro Matsumoto', age: 57 }],  
+    publisher: {name: 'O\'Reilly Media', location: 'CA'}
+};
+
+// Your ES6 code here
+const {title, authors:[{name: author1}, {name: author2}], publisher: {name: publisherName}} = book
+
+
+
+console.log(title); // JavaScript: The Definitive Guide
+console.log(author1); // David Flanagan 
+console.log(author2); // Yukihiro Matsumoto
+console.log(publisherName); // O'Reilly Media
+
+
+
+// Write an ES6 function that takes an array of objects and returns the sum of all ages.
+
+const sumOfAges = arr => {
+    let sumOfAge = 0
+    for (let i = 0; i < arr.length; i++){
+        sumOfAge += arr[i].age
+    }
+    return sumOfAge
+}
+
+var array = [
+	{
+		name: "Jay",
+		age: 60
+	},
+	{
+		name: "Gloria",
+		age: 36
+	},
+	{
+		name: "Manny",
+		age: 16
+	},
+	{
+		name: "Joe",
+		age: 9
+	}
+];
+
+console.log(sumOfAges(array)); // 121
+
+
