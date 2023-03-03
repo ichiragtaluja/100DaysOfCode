@@ -43,7 +43,6 @@ const getOutput = (arr, key, value) => arr.find(object => object[key] === value
 
 
 
-
         // Given an array of strings, use the filter method to return a new array containing only the strings that are palindromes.
         Input: ["racecar", "banana", "level", "apple"] Output: ["racecar", "level"]
 
@@ -78,15 +77,12 @@ const getOutput = (arr, key, value) => arr.find(object => object[key] === value
 
 
 
-
         // write a function which will take an array of "n" numbers as an argument and will return the object containing maximum number, minimum number and avg of all numbers in array.
 
-        sample e.g. -
-        console.log(getOutput([1, 2, 3, 4, 5])) // output : {max: 5, min: 1, avg: 3}
+        // sample e.g. -
+        // console.log(getOutput([1, 2, 3, 4, 5])) // output : {max: 5, min: 1, avg: 3}
 
-        note: do it without using any inbuilt
-        function
-
+        // note: do it without using any inbuiltfunction
         const getOutput = arr => {
             let maxValue = arr[1];
             let minValue = arr[1];
