@@ -161,4 +161,3 @@ const orders = [{
 
 const totalMoneyEarned = orders => orders.reduce((acc, order) => acc + order.items.reduce((acc, item) => foodPrices[item] + acc, 0), 0)
 
-console.log(totalMoneyEarned(orders))
