@@ -1,0 +1,23 @@
+{
+  "name": "100daysofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichiragtaluja/100DaysOfCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ichiragtaluja/100DaysOfCode/issues"
+  },
+  "homepage": "https://github.com/ichiragtaluja/100DaysOfCode#readme",
+  "devDependencies": {
+    "prettier": "2.8.4"
+  }
+}
