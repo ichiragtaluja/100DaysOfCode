@@ -28,9 +28,12 @@ const fakeFetch = (url) => {
 fakeFetch("https://example.com/api/itemlist")
   .then(
     (response) =>
-      (output.innerHTML = response.data.map(({ itemName, price, quantity }) => {
-        `${itemName} -- INR ${price} -- ${quantity}`;
-      }))
+      (output.innerHTML = `<ul>${response.data
+        .map(
+          (item) =>
+            `<li>${item.itemName} -- INR ${item.price} -- ${item.quantity}</li>`
+        )
+        .join("")}</ul>`)
   )
   .catch((error) => (output.textContent = error.message));
 
