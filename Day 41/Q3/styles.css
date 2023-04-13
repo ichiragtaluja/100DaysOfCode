@@ -1,0 +1,16 @@
+.list {
+    font-size: 18px;
+    color: #333333;
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    font-weight: 800;
+    
+}
+
+.list > li {
+    padding: 15px;
+    border: 1px dashed red;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
