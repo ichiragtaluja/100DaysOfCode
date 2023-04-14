@@ -1,0 +1,21 @@
+div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+    margin: 10px;
+    margin-left: 0px
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}

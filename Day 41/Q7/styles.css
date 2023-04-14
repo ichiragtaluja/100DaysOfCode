@@ -1,0 +1,18 @@
+input {
+    width: 400px;
+    height:40px;
+    border: 1px solid #cccccc;
+    margin: 10px;
+    padding: 0px 20px;
+    background-color: white;
+    color: #999999;
+    font-size: 16px;
+     font-weight: 400;
+     font-family: 'Open Sans', sans-serif;
+
+
+}
+
+input::placeholder {
+    color: #999999;
+}
