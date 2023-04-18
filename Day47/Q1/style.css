@@ -1,0 +1,41 @@
+.card {
+    width: 400px;
+    height: 500px;
+    /* border: solid; */
+    text-align: center;
+    /* position: relative; */
+    background-image: url("q1.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.card-description {
+    /* border: solid; */
+    margin-bottom: 0px;
+    position: relative;
+    top:395px;
+    background-color: white;
+    opacity: .6;
+    padding: 10px;
+
+
+}
+
+h1, p {
+    padding: 10px;
+    
+}
+
+h1 {
+    margin: 0;
+    
+}
+ p{
+    margin: 0;
+    font-size: 1.2em;
+    margin-top: -12px
+ }
+
+
+
+
