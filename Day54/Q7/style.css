@@ -60,9 +60,14 @@ button {
     border: none;
     padding: 6px;
     border-radius: 5px;
+    text-transform: uppercase;
 
 }
 
 .product>* {
     margin-bottom: 10px;
+}
+p{
+    font-size: 15px;
+    color: grey;
 }
