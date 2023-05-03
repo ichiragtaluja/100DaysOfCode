@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial;
+}
+
+
+.card {
+    
+    /* border : 1px solid black; */
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding:  10px 15px;
+    box-shadow: 0px -4px 29px 6px rgba(217, 217, 217, 1);
+    border-radius: 5px;
+    align-items: flex-start;
+    
+}
+
+.card img {
+    margin-left: -15px;
+    width: 400px;
+    object-fit: cover;
+    /* left: -11px */
+}
+
+
+
+.card p{
+    line-height: 1.5;
+    /* border: 1px solid black; */
+}
+
